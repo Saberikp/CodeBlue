@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body{
+    font-family:'Nunito',sans-serif;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:white;
+}
+
+nav a{
+    text-decoration:none;
+    color:#666;
+    margin-left:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h2{
+    font-size:3rem;
+    color:#7a78ff;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.1rem;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+}

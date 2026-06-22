@@ -1,0 +1,164 @@
+:root{
+    --blue:#3b82f6;
+    --light-blue:#7dd3fc;
+    --white:#ffffff;
+    --black:#111827;
+    --gray:#6b7280;
+    --background:#f8fafc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background-color: #ecefff;
+    background-image:
+        radial-gradient(#beb9fd 3px, transparent 3px);
+    background-size: 25px 25px;
+    
+}
+
+.container{
+    width:min(900px,90%);
+    margin:auto;
+    padding:50px 0;
+}
+
+.card{
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(10px);
+    border-radius:24px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(59,130,246,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.hero{
+    text-align:center;
+}
+
+.avatar{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid var(--blue);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    color:var(--blue);
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:var(--gray);
+}
+
+.section-title{
+    color:var(--blue);
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.tag{
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:10px 18px;
+    border-radius:50px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.tag:hover{
+    background:#bae6fd;
+    transform:translateY(-3px);
+}
+
+.timeline{
+    position:relative;
+    padding-right:25px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:var(--light-blue);
+    border-radius:20px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:25px;
+    padding-right:20px;
+}
+
+.timeline-item::before{
+    content:"";
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--blue);
+    position:absolute;
+    right:-9px;
+    top:8px;
+}
+
+.timeline-item strong{
+    display:block;
+    color:var(--blue);
+    margin-bottom:5px;
+}
+
+.quote{
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #60a5fa
+    );
+    color:white;
+    text-align:center;
+    font-size:1.2rem;
+    font-weight:500;
+}
+
+.footer{
+    text-align:center;
+    color:var(--gray);
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .tags{
+        justify-content:center;
+    }
+}
